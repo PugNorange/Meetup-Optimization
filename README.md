@@ -22,7 +22,9 @@ hostname/`sesstion id`/`start gps x-coordinate`/`start gps y-coordinate`/`end gp
 
 ## iOS app images
 <img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/ios_screenshot1.png" width="270" height="480">
+<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/ios_screenshot2.png" width="270" height="480">
 
-
+<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/ios_screenshot3.png" width="270" height="480">
+<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/ios_screenshot4.png" width="270" height="480">
 ## Web app images
 
