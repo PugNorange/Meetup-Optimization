@@ -4,6 +4,10 @@ const server    = require('http').createServer(app);
 const path      = require("path");
 const io        = require("socket.io")(server);
 const mqtt      = require("mqtt");
+const fs        = require("fs");
+const rawdata   = fs.readFileSync("./data/keys.json");
+const convData  = JSON.parse(rawdata);
+const gKey      = convData["gmap-key"];
 const port      = 3000;
 
 // Test URL
@@ -45,7 +49,7 @@ mqttClient.on('message', function (topic, message) {
     console.log("msg      : " + message.toString());
     mqttData = {
         "topic": topic.toString(),
-        "msg": message.toString(),
+        "msg": message.toString()
     }
 
     io.emit(socketId ,mqttData);
@@ -74,6 +78,7 @@ app.get('/:meetId/:startX/:startY/:endX/:endY', function(req, res) {
     res.render("index",{
         title: "Matta",
         meetId: meetId,
+        gKey: gKey,
         startCoordinate: {
             x: startX,
             y: startY

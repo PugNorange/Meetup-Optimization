@@ -37,9 +37,9 @@ socket.on(meetId, function(data){
     mqttLongitudeData = coordinates["lng"];
     // update the sender positions
     if((senderCurrentLocation == null) || (senderCurrentLocation == undefined)) {
-        senderCurrentLocation = new google.maps.LatLng(latitudeData, longitudeData);
+        senderCurrentLocation = new google.maps.LatLng(mqttLatitudeData, mqttLongitudeData);
     }
-    senderNewLocation = new google.maps.LatLng(latitudeData, longitudeData);
+    senderNewLocation = new google.maps.LatLng(mqttLatitudeData, mqttLongitudeData);
 
 });
 
