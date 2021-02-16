@@ -8,5 +8,17 @@ Using the Google Map JavaScript Library, it can get the estimated time arrival. 
 
 
 ## Architecture Overview
-<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/architecture_overview.png" width="500" height="850">
-[](![Architecture Overview](https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/architecture_overview.png))
+<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/architecture_overview.png" width="500" height="600">
+
+## URL style
+hostname/`sesstion id`/`start gps x-coordinate`/`start gps y-coordinate`/`end gps x-coordinate`/`end gps y-coordinate`
+`sesstion id` ... uuid
+`gps coordinates` ... integer
+[Example]: http://localhost:3000/318c2f44-5d97-449e-8aef-416757103f10/33.001884/-96.764698/32.994522/-96.750272
+
+
+## iOS app images
+<img src="https://github.com/PugNorange/Meetup-Optimization/blob/main/documentation/ios_screenshot1.png" width="90" height="160">
+
+## Web app images
+
